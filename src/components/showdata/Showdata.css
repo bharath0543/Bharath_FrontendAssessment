@@ -1,0 +1,91 @@
+
+.secondbox{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:100%;
+}
+.column{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.column-text,.column-search{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Add some spacing from the top */
+  }
+  th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+  }
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  tr:hover {
+    background-color: #e5e5e5;
+  }
+
+  /* YourComponent.css */
+
+.pagination-container {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  button.active {
+    background-color: #007bff;
+    color: #141313;
+    font-weight: bold;
+    
+  }
+  .checkbox-input{
+    display:flex;
+    gap:2px;
+    
+
+  }
+
+  @media only  screen and (max-width:480px){
+
+    .secondbox{
+      width:470px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .tabledata{
+      width: 300px; /* Specify the width for the container */
+      overflow-x: auto;
+    }
+
+    .tabledata::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    .tabledata::-webkit-scrollbar-thumb {
+      background-color: #6c757d;
+      border-radius: 5px;
+    }
+
+    .tabledata::-webkit-scrollbar-track {
+      background-color: #f1f1f1;
+    }
+   
+  }
+  
